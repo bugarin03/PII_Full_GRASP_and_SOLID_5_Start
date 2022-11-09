@@ -9,7 +9,7 @@ using System.Collections.Generic;
 
 namespace Full_GRASP_And_SOLID
 {
-    public class Recipe
+    public class Recipe : IDistributor
     {
         // Cambiado por OCP
         private IList<BaseStep> steps = new List<BaseStep>();
@@ -62,5 +62,5 @@ namespace Full_GRASP_And_SOLID
 
             return result;
         }
-    }
+    }   
 }
